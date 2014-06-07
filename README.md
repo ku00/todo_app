@@ -8,4 +8,4 @@ Ruby on RailsでToDoアプリを作るよ!(AA略)
 * おの
 * Ogasawara
 * Amemori
-* Waki
+* わき
