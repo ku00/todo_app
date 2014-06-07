@@ -6,6 +6,6 @@ Ruby on RailsでToDoアプリを作るよ!(AA略)
 
 * すだ
 * おの
-* Ogasawara
+* おが
 * Amemori
 * わき
