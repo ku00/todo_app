@@ -5,7 +5,7 @@ Ruby on RailsでToDoアプリを作るよ!(AA略)
 # メンバー
 
 * Suda
-* Ono
+* おの
 * Ogasawara
 * あめもり
 * Waki
