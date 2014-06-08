@@ -7,5 +7,5 @@ Ruby on RailsでToDoアプリを作るよ!(AA略)
 * Suda
 * おの
 * Ogasawara
-* Amemori
+* あめもり
 * Waki
