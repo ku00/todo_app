@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
+
+one:
+  title: MyString
+  start: 2014-06-19 17:18:35
+  deadline: 2014-06-19 17:18:35
+  description: MyText
+  check: false
+  category_id: 1
+
+two:
+  title: MyString
+  start: 2014-06-19 17:18:35
+  deadline: 2014-06-19 17:18:35
+  description: MyText
+  check: false
+  category_id: 1
