@@ -669,3 +669,182 @@ Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-26 17:26:22 +0900
 
 
 Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 17:26:22 +0900
+
+
+Started POST "/tasks" for 127.0.0.1 at 2014-06-26 17:46:15 +0900
+  [1m[36mActiveRecord::SchemaMigration Load (0.4ms)[0m  [1mSELECT "schema_migrations".* FROM "schema_migrations"[0m
+Processing by TasksController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YINg14mypYgp7wUMaKgxXJN9nW2PFs8+1Ht3u1apGUw=", "task"=>{"title"=>"", "start(1i)"=>"2014", "start(2i)"=>"6", "start(3i)"=>"26", "start(4i)"=>"08", "start(5i)"=>"25", "deadline(1i)"=>"2014", "deadline(2i)"=>"6", "deadline(3i)"=>"27", "deadline(4i)"=>"12", "deadline(5i)"=>"25", "description"=>"", "check"=>"0", "category_id"=>"1"}, "commit"=>"Create Task"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  [1m[35mCategory Load (0.6ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered tasks/_form.html.erb (38.0ms)
+  Rendered tasks/new.html.erb within layouts/application (80.8ms)
+Completed 200 OK in 249ms (Views: 185.0ms | ActiveRecord: 1.7ms)
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 17:46:16 +0900
+
+
+Started GET "/tasks" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+Processing by TasksController#index as HTML
+  [1m[36mTask Load (1.0ms)[0m  [1mSELECT "tasks".* FROM "tasks"[0m
+  [1m[35mCategory Load (0.2ms)[0m  SELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1  [["id", 1]]
+  [1m[36mCategory Load (0.1ms)[0m  [1mSELECT  "categories".* FROM "categories"  WHERE "categories"."id" = ? LIMIT 1[0m  [["id", 2]]
+  Rendered tasks/index.html.erb within layouts/application (26.4ms)
+Completed 200 OK in 42ms (Views: 37.5ms | ActiveRecord: 2.1ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:04 +0900
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+Processing by CategoriesController#index as HTML
+  [1m[35mCategory Load (0.2ms)[0m  SELECT "categories".* FROM "categories"
+  Rendered categories/index.html.erb within layouts/application (3.0ms)
+Completed 200 OK in 10ms (Views: 8.8ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:17 +0900
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2014-06-26 17:50:19 +0900
+Processing by CategoriesController#new as HTML
+  Rendered categories/_form.html.erb (3.9ms)
+  Rendered categories/new.html.erb within layouts/application (6.3ms)
+Completed 200 OK in 15ms (Views: 14.2ms | ActiveRecord: 0.0ms)
+
+
+Started GET "/categories" for 127.0.0.1 at 2014-06-26 17:50:21 +0900
+Processing by CategoriesController#index as HTML
+  [1m[36mCategory Load (0.2ms)[0m  [1mSELECT "categories".* FROM "categories"[0m
+  Rendered categories/index.html.erb within layouts/application (4.8ms)
+Completed 200 OK in 14ms (Views: 13.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/categories/new" for 127.0.0.1 at 2014-06-26 17:50:24 +0900
+Processing by CategoriesController#new as HTML
+  Rendered categories/_form.html.erb (2.4ms)
+  Rendered categories/new.html.erb within layouts/application (3.8ms)
+Completed 200 OK in 12ms (Views: 10.9ms | ActiveRecord: 0.0ms)
+
+
+Started POST "/categories" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+Processing by CategoriesController#create as HTML
+  Parameters: {"utf8"=>"✓", "authenticity_token"=>"YINg14mypYgp7wUMaKgxXJN9nW2PFs8+1Ht3u1apGUw=", "category"=>{"name"=>""}, "commit"=>"Create Category"}
+  [1m[35m (0.1ms)[0m  begin transaction
+  [1m[36m (0.1ms)[0m  [1mrollback transaction[0m
+  Rendered categories/_form.html.erb (3.1ms)
+  Rendered categories/new.html.erb within layouts/application (4.5ms)
+Completed 200 OK in 13ms (Views: 10.0ms | ActiveRecord: 0.2ms)
+
+
+Started GET "/assets/jquery.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+
+
+Started GET "/assets/categories.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+
+
+Started GET "/assets/tasks.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+
+
+Started GET "/assets/jquery_ujs.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+
+
+Started GET "/assets/application.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+
+
+Started GET "/assets/scaffolds.css?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+
+
+Started GET "/assets/turbolinks.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+
+
+Started GET "/assets/categories.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+
+
+Started GET "/assets/tasks.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
+
+
+Started GET "/assets/application.js?body=1" for 127.0.0.1 at 2014-06-26 17:50:26 +0900
