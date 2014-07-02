@@ -4,7 +4,7 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.all
+    @tasks = Task.order(:priority).reverse_order
   end
 
   # GET /tasks/1
@@ -69,6 +69,6 @@ class TasksController < ApplicationController
 
     # Never trust parameters from the scary internet, only allow the white list through.
     def task_params
-      params.require(:task).permit(:title, :start, :deadline, :description, :check, :category_id)
+      params.require(:task).permit(:title, :start, :deadline, :description, :check, :priority, :category_id)
     end
 end

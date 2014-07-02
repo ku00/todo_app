@@ -32,6 +32,10 @@
     <%= f.check_box :check %>
   </div>
   <div class="field">
+    <%= f.label :priority %><br>
+    <%= f.number_field :priority %>
+  </div>
+  <div class="field">
     <%= f.label :category_id %><br>
     <%= f.collection_select :category_id, Category.all, :id, :name %>
   </div>

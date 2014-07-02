@@ -26,6 +26,11 @@
 </p>
 
 <p>
+  <strong>Priority:</strong>
+  <%= @task.priority %>
+</p>
+
+<p>
   <strong>Category:</strong>
   <%= Category.find(@task.category_id).name %>
 </p>
