@@ -7,6 +7,23 @@
   <%= javascript_include_tag 'application', 'data-turbolinks-track' => true %>
   <%= csrf_meta_tags %>
   <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+  <script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.2/jquery.min.js"></script>
+  <script>
+  $(function() {
+  $("#tab .tabContents").hide();
+  $("#tab .tabNav li:first a").addClass("active").show();
+  $("#tab .tabContents:first").show();
+  $("#tab .tabNav li").click(function() {
+    $("#tab .tabNav li a").removeClass("active");
+    $(this).find("a").addClass("active");
+    $("#tab .tabContents").hide();
+    var activeTab = $(this).find("a").attr("href");
+    $(activeTab).fadeIn();
+    return false;
+  });
+});
+</script>
+
 </head>
 <body>
   <div id="layout">
