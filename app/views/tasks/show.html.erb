@@ -1,39 +1,39 @@
 <p id="notice"><%= notice %></p>
 
 <p>
-  <strong>Title:</strong>
+  <strong>タスク名:</strong>
   <%= @task.title %>
 </p>
 
 <p>
-  <strong>Start:</strong>
+  <strong>開始:</strong>
   <%= @task.start %>
 </p>
 
 <p>
-  <strong>Deadline:</strong>
+  <strong>締切:</strong>
   <%= @task.deadline %>
 </p>
 
 <p>
-  <strong>Description:</strong>
+  <strong>詳細:</strong>
   <%= @task.description %>
 </p>
 
 <p>
-  <strong>Check:</strong>
+  <strong>完了:</strong>
   <%= @task.check %>
 </p>
 
 <p>
-  <strong>Priority:</strong>
+  <strong>優先度:</strong>
   <%= @task.priority %>
 </p>
 
 <p>
-  <strong>Category:</strong>
+  <strong>カテゴリ:</strong>
   <%= Category.find(@task.category_id).name %>
 </p>
 
-<%= link_to 'Edit', edit_task_path(@task) %> |
-<%= link_to 'Back', tasks_path %>
+<%= link_to '編集する', edit_task_path(@task) %> |
+<%= link_to 'タスク一覧に戻る', tasks_path %>
