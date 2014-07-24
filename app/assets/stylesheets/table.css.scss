@@ -1,55 +1,55 @@
 table {
-	border-collapse: collapse !important;
-	width: 100%;
+  border-collapse: collapse !important;
+  width: 100%;
 }
 
 table,
 th,
 td {
-	border: 1px solid #000;
+  border: 1px solid #000;
 }
 
 th,
 td {
-	padding: 5px 8px;
+  padding: 5px 8px;
 }
 
 td.command {
-	padding: 0;
-	-webkit-box-sizing: border-box;
-	height: 29px;
-	width:40px;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  height: 29px;
+  width:40px;
 }
 
 th {
-	background: #cfc;
+  background: #cfc;
 }
 
 th.title,
 td.title {
-	width: 10em;
+  width: 10em;
 }
 
 th.category,
 td.category {
-	width: 4em;
+  width: 4em;
 }
 
 tbody tr {
-	line-height: 40px;
+  line-height: 40px;
 }
 
 tbody tr:hover {
-	background: #ddf;
+  background: #ddf;
 }
 
 .command{
-	a {
-		display: block;
-		text-align: center;
+  a {
+    display: block;
+    text-align: center;
 
-		&:hover {
-			text-decoration: none;
-		}
-	}
+    &:hover {
+      text-decoration: none;
+    }
+  }
 }
