@@ -1,4 +1,4 @@
-# ミニコウサToDoアプリ班
+# コウサ展 in SUMMER : ToDoアプリ班
 
 Ruby on RailsでToDoアプリを作るよ!(AA略)
 
