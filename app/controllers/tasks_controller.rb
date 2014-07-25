@@ -4,8 +4,18 @@ class TasksController < ApplicationController
   # GET /tasks
   # GET /tasks.json
   def index
-    @tasks = Task.order(:priority).reverse_order
-    @task_count = Task.count
+    @categories_name = Category.all
+    @categories = Category.pluck(:id)
+
+    category_first = @categories.shift
+    @tasks_first = Task.where(category_id: category_first).order(:priority)
+
+    @tasks_tab = []
+    @categories.each do |category_id|
+      @tasks_tab << Task.where(category_id: category_id).order(:priority)
+    end
+
+    @task_count = Task.count    
   end
 
   # GET /tasks/1
