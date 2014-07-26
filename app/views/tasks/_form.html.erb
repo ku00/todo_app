@@ -21,7 +21,7 @@
   </div>
   <div class="field">
     <%= f.label :締切日時 %><br>
-    <%= f.datetime_select :deadline %>
+    <%= f.datetime_select :deadline,:default => Time.now + 7.day %>
   </div>
   <div class="field">
     <%= f.label :詳細 %><br>

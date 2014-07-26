@@ -6,17 +6,16 @@ class TasksController < ApplicationController
   def index
     @categories_name = Category.all
     @categories = Category.pluck(:id)
+
     category_first = @categories.shift
-    @tasks_first = Task.where(category_id: category_first)
+    @tasks_first = Task.where(category_id: category_first).order(:priority)
 
     @tasks_tab = []
     @categories.each do |category_id|
-      @tasks_tab << Task.where(category_id: category_id)
+      @tasks_tab << Task.where(category_id: category_id).order(:priority)
     end
 
-    @tasks = Task.order(:priority).reverse_order
-    @task_count = Task.count
-    
+    @task_count = Task.count    
   end
 
   # GET /tasks/1
