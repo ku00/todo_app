@@ -3,11 +3,80 @@
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 #layout {
-	width: 1000px;
-	margin: 0 auto;
+  width: 1000px;
+  margin: 0 auto;
+}
+
+h1 {
+  position: relative;
+  margin: 30px auto 40px;
+  letter-spacing: 2pt;
+}
+
+h1:before {
+  content: "";
+  width: 50px;
+  height: 50px;
+  border: 1px solid #bbf;
+  border-radius: 25px;
+  display: block;
+  position: absolute;
+  top: -15px;
+  left: -23px;
+  z-index: 1;
+  box-shadow: 0 0 5px 0 #ddf;
+}
+
+h1:after {
+  content: "";
+  width: 20px;
+  height: 20px;
+  border: 1px solid #bbf;
+  border-radius: 10px;
+  display: block;
+  position: absolute;
+  top: 23px;
+  left: 28px;
+  z-index: 1;
+  box-shadow: 0 0 5px 0 #ddf;
+}
+
+ul {
+  padding: 0;
+  margin: 0;
+ 
+  li {
+    list-style: none;
+    display: inline-block;
+    background: #ccc;
+    line-height: 40px;
+    min-width: 6em;
+    text-align: center;
+    border-radius: 15px 15px 0 0;
+    a {
+      display: block;
+      text-decoration: none;
+      transition: .2s;
+      border-radius: 15px 15px 0 0;
+    }
+  }
+}
+a.active {
+      background: #ddf;
+      border-radius: 15px 15px 0 0;
+}
+
+input[type="text"]:hover,
+textarea:hover {
+  background: #ddf;
+  box-sizing: border-box;
+}
+
+input[type="submit"]:hover {
+  cursor: pointer;
 }
